@@ -188,6 +188,48 @@
             text-decoration: underline;
         }
 
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .header-section {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            #news-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            #news-list li strong {
+                min-width: auto;
+                text-align: left;
+            }
+        }
+
     </style>
 </head>
 <body>
