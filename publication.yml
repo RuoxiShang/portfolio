@@ -1,0 +1,125 @@
+publication:
+  - title: "Rethinking Teaching Evaluation Reports: Designing AI-transformed Student Feedback for Instructor Engagement"
+    authors: 
+      - Ruoxi Shang
+      - Keri Mallari
+      - Wei Bin Au Yeong
+      - Ken Yasuhara
+      - Anthony Tang
+      - Gary Hsieh
+    venue_short: "CSCW 2025"
+    venue_long: "Computer Supported Cooperative Work and Social Computing"
+    pdf: "cscw2025_set_paper.pdf"
+  - title: "BLADE: Benchmarking Language Model Agents for Data-Driven Science"
+    authors: 
+      - Ken Gu
+      - Ruoxi Shang
+      - Ruien Jiang
+      - Keying Kuang
+      - Richard-John Lin
+      - Donghe Lyu
+      - Yue Mao
+      - Youran Pan
+      - Teng Wu
+      - Jiaqian Yu
+      - Yikun Zhang
+      - Tianmai M. Zhang
+      - Lanyi Zhu
+      - Mike A. Merrill
+      - Jeffrey Heer
+      - Tim Althoff
+    venue_short: "EMNLP 2024"
+    venue_long: "Empirical Methods in Natural Language Processing"
+    arxiv: "https://www.arxiv.org/pdf/2408.09667"
+    github: "https://github.com/behavioral-data/BLADE"
+  - title: "Trusting your AI Agent Emotionally and Cognitively: Development and Validation of a Semantic Differential Scale for AI Trust"
+    authors:
+      - Ruoxi Shang
+      - Gary Hsieh
+      - Chirag Shah
+    venue_short: "AIES 2024"
+    venue_long: "AAAI Conference on AI, Ethics, and Society"
+    pdf: "aies2024_trust_paper.pdf"
+    arxiv: "https://www.arxiv.org/pdf/2408.05354"
+  - title: "How Do Analysts Understand and Verify AI-Assisted Data Analyses?"
+    authors:
+      - Ken Gu
+      - Ruoxi Shang
+      - Tim Althoff
+      - Chenglong Wang
+      - Steven M. Drucker
+    venue_short: "CHI 2024"
+    venue_long: "CHI Conference on Human Factors in Computing Systems"
+    pdf: "chi2024_llm_paper.pdf"
+  - title: "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups"
+    authors:
+      - Donghoon Shin
+      - Soomin Kim
+      - Ruoxi Shang
+      - Joonhwan Lee
+      - Gary Hsieh
+    venue_short: "CHI 2023"
+    venue_long: "CHI Conference on Human Factors in Computing Systems"
+    pdf: "chi2023_introbot_paper.pdf"
+  - title: "Why Am I Not Seeing It? Understanding Users' Needs for Counterfactual Explanations in Everyday Recommendations"
+    authors:
+      - Ruoxi Shang
+      - KJ Kevin Feng
+      - Chirag Shah
+    venue_short: "FAccT 2022"
+    venue_long: "ACM Conference on Fairness, Accountability, and Transparency"
+    pdf: "facct2022_whynot_paper.pdf"
+    video: "https://www.youtube.com/watch?v=3wpp0iYY3uQ"
+  - title: "What's going on in Accessibility Research? Frequencies and Trends of Disability Categories and Research Domains in Publications at ASSETS"
+    authors:
+      - Ather Sharif
+      - Ploypilin Pruekcharoen
+      - Thrisha Ramesh
+      - Ruoxi Shang
+      - Spencer Williams
+      - Gary Hsieh
+    venue_short: "ASSETS 2022"
+    venue_long: "ACM SIGACCESS Conference on Computers and Accessibility"
+    pdf: "asset2022_whatsgoing_paper.pdf"
+  - title: "Giving and Receiving: Reciprocal Review Exchange in Online Fanfiction Communities"
+    authors:
+      - Ruoxi Shang
+      - Zile Xiao
+      - Jenna Frens
+      - Cecilia Aragon
+    venue_short: "CSCW 2021 Companion"
+    venue_long: "Companion Publication of the 2021 Conference on Computer Supported Cooperative Work and Social Computing"
+    pdf: "cscw2021_giving_poster.pdf"
+  - title: "Feature fusion network based on attention mechanism for 3D semantic segmentation of point clouds"
+    authors:
+      - Heng Zhou
+      - Zhijun Fang
+      - Yongbin Gao
+      - Bo Huang
+      - Cengsi Zhong
+      - Ruoxi Shang
+    venue_short: "Pattern Recognition Letters, 2020"
+    pdf: "prl2020_feature_paper.pdf"
+  - title: "Interpretable machine learning for predicting biomethane production in industrial-scale anaerobic co-digestion"
+    authors:
+      - Djavan De Clercq
+      - Zongguo Wen
+      - Fan Fei
+      - Luis Caicedo
+      - Kai Yuan
+      - Ruoxi Shang
+    venue_short: "Science of the Total Environment, 2020"
+    pdf: "ste2020_interpertable_paper.pdf"
+  - title: "Machine learning powered software for accurate prediction of biogas production: A case study on industrial-scale Chinese production data"
+    authors:
+      - Djavan De Clercq
+      - Devansh Jalota
+      - Ruoxi Shang
+      - Kunyi Ni
+      - Zhuxin Zhang
+      - Areeb Khan
+      - Zongguo Wen
+      - Luis Caicedo
+      - Kai Yuan
+    venue_short: "Journal of Cleaner Production, 2019"
+    pdf: "jcp2019_machine_paper.pdf"

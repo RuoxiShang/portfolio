@@ -1,0 +1,3 @@
+Hi I'm Anna, a PhD candidate at the [University of Washington](https://www.hcde.washington.edu/).
+
+I design and evaluate AI systems to make them useful and trustworthy, with papers at CHI, CSCW, FAccT, AIES, and EMNLP. My current focus is aligning Large Language Models with pluralistic human styles, perspectives, and values. Before all of these, I studied mathematics, data science, and ML at UC Berkeley.
