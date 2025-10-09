@@ -113,6 +113,60 @@
             line-height: 1.4;
         }
 
+        #publications-list li {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .publication-content {
+            flex: 1;
+            padding-top: 0;
+        }
+
+        .publication-thumbnail {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 8px;
+            flex-shrink: 0;
+            filter: grayscale(30%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+            margin-top: -60px;
+            cursor: pointer;
+        }
+
+        .publication-thumbnail:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
         li strong:first-child {
             font-size: 1.1em;
         }
@@ -228,6 +282,23 @@
                 min-width: auto;
                 text-align: left;
             }
+
+            #publications-list li {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .publication-thumbnail {
+                width: 100%;
+                max-width: 250px;
+                height: auto;
+                order: -1;
+                margin-bottom: 15px;
+            }
+
+            .publication-content {
+                text-align: center;
+            }
         }
 
     </style>
@@ -265,6 +336,11 @@
         <li>Loading publications...</li>
     </ul>
     <a href="all-publications.html" class="link-button">See full list of work here</a>
+
+    <!-- Lightbox for images -->
+    <div class="lightbox" id="lightbox">
+        <img src="" alt="Full size preview">
+    </div>
 
     <script>
         // Load introduction
@@ -429,15 +505,44 @@
                         noteHtml = `<br><em>${pub.notes}</em>`;
                     }
 
-                    li.innerHTML = `<strong>${pub.title}</strong><br>
-                        ${authorsText}${noteHtml}<br>
-                        ${venueYearText}${linksHtml}`;
+                    li.innerHTML = `
+                        <img src="figures/thumbnail.png" alt="${pub.title}" class="publication-thumbnail">
+                        <div class="publication-content">
+                            <strong>${pub.title}</strong><br>
+                            ${authorsText}${noteHtml}<br>
+                            ${venueYearText}${linksHtml}
+                        </div>
+                    `;
                     list.appendChild(li);
                 });
             })
             .catch(error => {
                 document.getElementById('publications-list').innerHTML = '<li>Publications coming soon.</li>';
             });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+
+        // Add click event to thumbnails (using event delegation)
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('publication-thumbnail')) {
+                lightboxImg.src = e.target.src;
+                lightbox.classList.add('active');
+            }
+        });
+
+        // Close lightbox when clicking on it
+        lightbox.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
