@@ -8,7 +8,8 @@
       "status": "in_submission",
       "notes": null,
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": true
     },
     {
       "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
@@ -19,7 +20,8 @@
       "status": "in_submission",
       "notes": "(*Authors contributed equally)",
       "equal_contribution": true,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": true
     },
     {
       "title": "Synthetic Diversity: How Researchers Perceive and Engage with LLM-Generated Diverse Research Feedback",
@@ -30,7 +32,8 @@
       "status": "in_submission",
       "notes": null,
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": true
     },
     {
       "title": "Creative Stimuli for Multi-Agent LLM Brainstorming",
@@ -41,7 +44,8 @@
       "status": "in_submission",
       "notes": null,
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": true
     },
     {
       "title": "Rethinking Teaching Evaluation Reports: Designing AI-transformed Student Feedback for Instructor Engagement",
@@ -52,7 +56,8 @@
       "status": "published",
       "notes": "Proceedings of the ACM Conference on Computer-Supported Cooperative Work and Social Computing.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": true
     },
     {
       "title": "BLADE: Benchmarking Language Model Agents for Data-Driven Science",
@@ -65,7 +70,8 @@
       "equal_contribution": null,
       "doi_or_url": null,
       "arxiv": "https://www.arxiv.org/pdf/2408.09667",
-      "github": "https://github.com/behavioral-data/BLADE"
+      "github": "https://github.com/behavioral-data/BLADE",
+      "featured": true
     },
     {
       "title": "Trusting your AI Agent Emotionally and Cognitively: Development and Validation of a Semantic Differential Scale for AI Trust",
@@ -77,7 +83,8 @@
       "notes": "AAAI/ACM Conference on AI, Ethics, and Society.",
       "equal_contribution": null,
       "doi_or_url": null,
-      "arxiv": "https://www.arxiv.org/pdf/2408.05354"
+      "arxiv": "https://www.arxiv.org/pdf/2408.05354",
+      "featured": true
     },
     {
       "title": "How Do Analysts Understand and Verify AI-Assisted Data Analyses?",
@@ -88,7 +95,8 @@
       "status": "published",
       "notes": "Proceedings of the CHI Conference on Human Factors in Computing Systems.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": true
     },
     {
       "title": "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups",
@@ -99,19 +107,21 @@
       "status": "published",
       "notes": "Proceedings of the CHI Conference on Human Factors in Computing Systems.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
       "title": "Understanding Lay Users' Needs of Counterfactual Explanations for Everyday Recommendations",
       "authors": ["Ruoxi Shang", "Kevin Feng", "Chirag Shah"],
       "year": 2022,
-      "venue": "ACM FAccT 2022",
+      "venue": "FAccT 2022",
       "type": "full",
       "status": "published",
       "notes": "ACM Conference on Fairness, Accountability, and Transparency.",
       "equal_contribution": null,
       "doi_or_url": null,
-      "video": "https://www.youtube.com/watch?v=3wpp0iYY3uQ"
+      "video": "https://www.youtube.com/watch?v=3wpp0iYY3uQ",
+      "featured": true
     },
     {
       "title": "Machine learning powered software for accurate prediction of biogas production: A case study on industrial-scale Chinese production data",
@@ -122,7 +132,8 @@
       "status": "published",
       "notes": "218:390–399.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
       "title": "Interpretable machine learning for predicting biomethane production in industrial-scale anaerobic co-digestion",
@@ -133,7 +144,8 @@
       "status": "published",
       "notes": "Article 134574.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
       "title": "Feature fusion network based on attention mechanism for 3D semantic segmentation of point clouds",
@@ -144,7 +156,8 @@
       "status": "published",
       "notes": "133:327–333.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
       "title": "Leveraging Generative AI and Human Collaboration in Peer-Feedback",
@@ -155,10 +168,11 @@
       "status": "published",
       "notes": null,
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
-      "title": "“What’s going on in Accessibility Research?” Frequencies and Trends of Disability Categories and Research Domains in Publications at ASSETS",
+      "title": "\"What's going on in Accessibility Research?\" Frequencies and Trends of Disability Categories and Research Domains in Publications at ASSETS",
       "authors": ["Ather Sharif", "Ploypilin Pruekcharoen", "Thrisha Ramesh", "Ruoxi Shang", "Spencer Williams", "Gary Hsieh"],
       "year": 2022,
       "venue": "ASSETS 2022",
@@ -166,7 +180,8 @@
       "status": "published",
       "notes": "The 24th International ACM SIGACCESS Conference on Computers and Accessibility.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
       "title": "Giving and Receiving: Reciprocal Review Exchange in Online Fanfiction Communities",
@@ -177,7 +192,8 @@
       "status": "published",
       "notes": "pp. 171–174.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
       "title": "Reciprocity in Reviewing on Fanfiction.net",
@@ -188,7 +204,8 @@
       "status": "published",
       "notes": "International Conference on Human-Computer Interaction, Springer, Cham.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     },
     {
       "title": "Rapid gamma-ray burst localization aboard the e-Astrogam satellite using a 3D convolutional neural network",
@@ -199,6 +216,7 @@
       "status": "published",
       "notes": "Oct 16, San Francisco, CA.",
       "equal_contribution": null,
-      "doi_or_url": null
+      "doi_or_url": null,
+      "featured": false
     }
   ]

@@ -413,9 +413,9 @@
             .then(data => {
                 const list = document.getElementById('publications-list');
                 list.innerHTML = '';
-                // Filter for full papers only
-                const fullPapers = data.filter(pub => pub.type === 'full');
-                fullPapers.forEach(pub => {
+                // Filter for featured publications only
+                const featuredPubs = data.filter(pub => pub.featured === true);
+                featuredPubs.forEach(pub => {
                     const li = document.createElement('li');
 
                     // Format authors with space after comma and bold Ruoxi Shang
@@ -505,8 +505,23 @@
                         noteHtml = `<br><em>${pub.notes}</em>`;
                     }
 
+                    // Generate thumbnail filename: "firstword-venue-year.png"
+                    let thumbnailName = 'thumbnail.png'; // default
+                    if (pub.title) {
+                        // Get first word from title (lowercase, remove special chars)
+                        const firstWord = pub.title.split(/[\s:]+/)[0].toLowerCase().replace(/[^a-z0-9]/g, '');
+                        // Get venue abbreviation (use "arxiv" if venue is missing)
+                        let venueShort = 'arxiv';
+                        if (pub.venue) {
+                            venueShort = pub.venue.split(/[\s\d]/)[0].toLowerCase().replace(/[^a-z]/g, '');
+                        }
+                        // Use year if available, otherwise use empty string or "ongoing"
+                        const year = pub.year || 'ongoing';
+                        thumbnailName = `${firstWord}-${venueShort}-${year}.png`;
+                    }
+
                     li.innerHTML = `
-                        <img src="figures/thumbnail.png" alt="${pub.title}" class="publication-thumbnail">
+                        <img src="figures/${thumbnailName}" alt="${pub.title}" class="publication-thumbnail" onerror="this.src='figures/thumbnail.png'">
                         <div class="publication-content">
                             <strong>${pub.title}</strong><br>
                             ${authorsText}${noteHtml}<br>
