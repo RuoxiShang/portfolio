@@ -9,7 +9,7 @@ publication:
       - Gary Hsieh
     venue_short: "CSCW 2025"
     venue_long: "Computer Supported Cooperative Work and Social Computing"
-    pdf: "cscw2025_set_paper.pdf"
+    #pdf: "cscw2025_set_paper.pdf"
   - title: "BLADE: Benchmarking Language Model Agents for Data-Driven Science"
     authors: 
       - Ken Gu
