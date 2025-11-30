@@ -1,0 +1,234 @@
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amssymb} % for symbol shapes
+% \usepackage{fontawesome5}
+% \usepackage[T1]{fontenc}
+
+% --- Engine-agnostic font setup ---
+\usepackage{ifxetex,ifluatex}
+\newif\ifxetexorluatex
+\ifxetex \xetexorluatextrue \fi
+\ifluatex \xetexorluatextrue \fi
+
+\ifxetexorluatex
+  % XeLaTeX / LuaLaTeX: real Gill Sans
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Gill Sans}[
+    UprightFont   = *,
+    BoldFont      = {Gill Sans Bold},
+    ItalicFont    = {Gill Sans Italic},
+    BoldItalicFont= {Gill Sans Bold Italic}
+  ]
+\else
+  % pdfLaTeX fallback: Gill Sans–like
+  % Option 1 (closest): Gillius
+  \usepackage[sfdefault]{gillius} % needs TeX Live package 'gillius'
+  % Option 2: Helvetica
+  % \usepackage[scaled=0.95]{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+% ---------- Global Formatting ----------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\RaggedRight
+
+% Lists: compact
+\setlist{nosep,leftmargin=1.2em,labelsep=0.4em}
+\setlist[itemize]{topsep=1pt,itemsep=1pt,parsep=0pt}
+\renewcommand{\labelitemi}{\tiny$\bullet$}
+
+% Section formatting
+\titleformat{\section}{\bfseries\scshape\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titleformat{\subsection}{\bfseries\normalsize}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{2pt}
+
+% ---------- Header ----------
+\newcommand{\cvheader}[6]{%
+  \begin{center}
+    {\LARGE\bfseries #1}\\[0.9em] 
+    \small
+    \faEnvelope\ \href{mailto:#2}{#2}\hspace{0.6em}$|$\hspace{0.6em}
+    \faGlobe\ \href{https://#3}{#3}\hspace{0.6em}$|$\hspace{0.6em}
+    \faGoogle\ \href{#4}{Google Scholar}\hspace{0.6em}$|$\hspace{0.6em}
+    % CHANGE IS HERE: Replaced the second {#5} with {GitHub}
+    \faGithub\ \href{https://github.com/#5}{GitHub}\hspace{0.6em}$|$\hspace{0.6em}
+    {#6}
+  \end{center}\vspace{4pt} 
+}
+
+% Experience line
+\newcommand{\experience}[4]{%
+  \vspace{6pt}% extra space before each experience
+  \noindent\textbf{#1} \hfill \textit{\small #2}\\
+  \textit{#3} \hfill \textit{\small #4}
+}
+
+\newcommand{\skill}[2]{%
+  \vspace{4pt}
+  \textbf{#1: }#2
+}
+
+\usepackage{xcolor}
+\definecolor{tagpink}{named}{magenta}
+\definecolor{taggray}{gray}{0.6} % 0 = black, 1 = white; tweak 0.3 → 0.4/0.5 if you want lighter
+\newcommand{\tagRAI}{%
+  \textsuperscript{\scriptsize\textcolor{tagpink}{$\blacktriangle$}}%
+}
+\newcommand{\tagMEAS}{%
+  \textsuperscript{\scriptsize\textcolor{tagpink}{$\blacksquare$}}%
+}
+\newcommand{\tagAGENT}{%
+  \textsuperscript{\scriptsize\textcolor{tagpink}{$\bigstar$}}%
+}
+
+\begin{document}
+
+\cvheader
+{Ruoxi (Anna) Shang}
+{rxshang@uw.edu}
+{ruoxishang.com}
+{https://scholar.google.com/citations?user=}
+{ruoxishang}
+{Seattle, WA}
+
+% ===== PROFILE (Summary + Research Interests combined) =====
+%\section{Research Summary}
+%I conduct research at the intersection of HCI and AI. My work focuses on \textbf{evaluating and steering LLM behavior} for trust, alignment, and reliability. I develop theory-grounded \textbf{benchmarks and evaluation pipelines} to measure model risks in realistic settings, and I design human-in-the-loop experiments to audit the downstream impact of AI agents. I have published 10+ peer-reviewed papers (CHI, EMNLP, FAccT, AIES) and contributed to foundational research at Microsoft Research and Oumi AI.
+
+
+% - understand how and why models succeed and fails as  well as how might we design for better human-ai experiences
+% methods:
+% - theory-grounded design of framework, strategies, and tasks
+% - building pipelines
+% - conduct experiments with statistical methods to measure and validate effectiveness
+% - I also use HCI methods of studying people as a in-depth way to get subjective yet rich insights on when and why model fails
+
+% ===== EDUCATION =====
+\section{Education}
+\experience{University of Washington, Human-Centered Design and Engineering}{Sep 2020 -- Exp. Oct 2026}{Ph.D.\ Candidate, Committee: Gary Hsieh, Chirag Shah, Tim Althoff, David Mcdonald}{}
+%\\[-2pt]
+% \\
+% {\small }\vspace{4pt} % clearer advisor line on its own, with spacing
+
+\experience{University of California, Berkeley}{Graduated May 2020}{B.A., Applied Mathematics and Statistics (Concentration: Data Science)}{}
+
+% ===== SKILLS =====
+
+\section{Skills}
+
+\skill{Programming}{Python, JavaScript/TypeScript, React, PyTorch, scikit-learn, SQL, HTML/CSS}
+
+\skill{LLMs}{Prompt Engineering, In-Context Learning, RAG, LLM APIs, Multi-agent frameworks, LLM-as-a-judge, Evaluation and Benchmark Design (e.g. taxonomy development, ablation and robustness test, human annotation)}
+
+\skill{HCI}{Experimental design, Hypothesis testing, Mixed-methods, Survey Design, Think-aloud protocol, Affinity diagramming, Cognitive walkthrough, Heuristic evaluation, Rapid prototyping}
+
+
+
+% ===== RESEARCH & WORK EXPERIENCE =====
+\section{Research \& Work Experience}
+
+\experience{Oumi AI}{Oct 2025 -- Present}{Research Fellow}{Collaborators: Emmanouil Koukoumidis; Panos Achlioptas; Shang Hong Sim}
+\begin{itemize}
+  \item Building a \textbf{benchmark for semantic risk reasoning} that evaluates models’ ability to discriminate risk type, assess severity, and justify rationales from text.
+  \item Operationalizing a comprehensive risk taxonomy and engineering a high-quality contrastive dataset to stress-test model safety and alignment.
+\end{itemize}
+
+% We group your UW work into one "job" but highlight the leadership roles specifically
+\experience{University of Washington}{Sep 2020 -- Present}{Research Lead \& Mentor}{Seattle, WA}
+\begin{itemize}
+
+  \item Recruited and led a 12-person team to generate complex ground-truth datasets for agent benchmarking. Designed consensus protocols to resolve conflicting domain priorities (Data Science vs. ML) to ensure alignment and rigor. \textcolor{tagpink}{\textit{Co-authored paper accepted to EMNLP 2024}}
+  
+  \item Advised 50+ interdisciplinary teams through 0-to-1 development of user-centered systems in graduate level project-based classes. Guided the translation of ambiguous user insights into concrete technical specifications, helping teams to evaluate feasibility and manage architectural trade-offs to ensure successful MVP delivery within 10-week constraints.
+\end{itemize}
+
+\experience{Microsoft Research}{Jun 2025 -- Sep 2025}{Research Intern}{Advisors: Denae Ford Robinson, Edward Cutrell}
+\begin{itemize}
+  \item Designed a novel structured \textbf{user profiling framework} that synthesizes interaction data with social science theory to create robust, interpretable user representations, enabling inference-time personalized steering.
+  \item Engineered a novel ecologically valid evaluation pipeline to generate ground-truth test cases for auditing agent alignment and validated system effectiveness via a robust auditing protocol using \textbf{90 days of real user communication data} across 20 participants. \textcolor{tagpink}{\textit{Paper and Patent currently under review.}}
+\end{itemize}
+
+\experience{Microsoft Research}{Jun 2023 -- Sep 2023}{Research Intern}{Advisors: Steven Drucker; Bongshin Lee; Dave Brown}
+\begin{itemize}
+  \item Led foundational research on using generative AI for end-to-end data analysis and decision making.
+  \item Designed and ran studies with industry experienced data analysts to \textbf{evaluate how they understand, trust, and verify AI-generated analyses}, identifying failure modes and verification strategies to inform the design of AI-assisted data analysis tool. \textcolor{tagpink}{\textit{Co-authored paper accepted to CHI 2024}}
+\end{itemize}
+
+\newpage
+
+\experience{TruEra}{Jul 2022 -- Sep 2022}{Data Science and User Research Intern}{Mentors: Mantas Lilis; Joshua Noble; Justin Lawyer}
+\begin{itemize}
+  \item Improved the Machine Learning (ML) model (e.g. classification, regression) debugging experience for data scientists by leading research and designing product guided workflows from research insights for TruEra \textbf{ML Model Diagnostics}. Identified the top pain points in real debugging practice and prioritized fixes, driving 0 to 1 product exploration during after new funding round and shaped the roadmap.
+\end{itemize}
+
+
+% ===== PUBLICATIONS =====
+\section{Selected Publications}
+{\small
+\textit{
+$\textcolor{tagpink}{\blacktriangle}$ Responsible AI \quad
+$\textcolor{tagpink}{\blacksquare}$ Measurement \& Benchmarks \quad
+$\textcolor{tagpink}{\bigstar}$ Agents \& LM-powered Systems}
+}
+
+\vspace{6pt}
+
+
+\begin{itemize}[label={},leftmargin=0em,itemindent=0em,parsep=1pt]
+
+  \item \textbf{Ruoxi Shang}, Dan Marshall, Edward Cutrell, Denae Ford Robinson.
+  \textit{Mimetic Alignment with PRISMA: Auditing of AI-inferred Personal Profiles}.
+  \textit{arXiv} (under review).\hfill\tagRAI\tagAGENT
+  \vspace{8pt}
+  
+  \item Meziah Ruby Cristobal*, Hyeonjeong Byeon*, Tze-Yu Chen*, \textbf{Ruoxi Shang}*, Donghoon Shin*, Ruican Zhong*, Tony Zhou*, Gary Hsieh.
+  \textit{PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication}.
+  \textit{arXiv} (under review). {\small[* equal contribution]}\hfill\tagAGENT
+  \vspace{8pt}
+  
+  \item \textbf{Ruoxi Shang}, Ruican Zhong, Yuren Pang, David McDonald, Chirag Shah, Gary Hsieh.
+  \textit{Synthetic Diversity: How Researchers Perceive and Engage with LLM-Generated Diverse Research Feedback}.
+  \textit{arXiv} (under review).\hfill\tagRAI\tagMEAS
+  \vspace{8pt}
+  
+  \item \textbf{Ruoxi Shang}, Lei Cai, Courtney Cho, Chirag Shah, Gary Hsieh.
+  \textit{Creative Stimuli for Multi-Agent LLM Brainstorming}.
+  \textit{arXiv} (under review).\hfill\tagAGENT
+  \vspace{8pt}
+
+  \item \textbf{Ruoxi Shang}, Keri Mallari, Wei Bin Au Yeong, Ken Yasuhara, Anthony Tang, Gary Hsieh.
+  \textit{Rethinking Teaching Evaluation Reports}.
+  \textit{CSCW 2025}.\hfill\tagRAI\tagMEAS
+  \vspace{8pt}
+
+  \item \textbf{Ruoxi Shang}, Gary Hsieh, Chirag Shah.
+  \textit{Trusting your AI Agent Emotionally and Cognitively: Development and Validation of a Semantic Differential Scale for AI Trust}.
+  \textit{AIES 2024}.\hfill\tagRAI\tagMEAS
+  \vspace{8pt}
+
+  \item Ken Gu, \textbf{Ruoxi Shang}, Ruien Jiang, Keying Kuang, \emph{et al.}
+  \textit{BLADE: Benchmarking Language Model Agents for Data-Driven Science}.
+  \textit{EMNLP 2024}.\hfill\tagMEAS\tagAGENT
+  \vspace{8pt}
+
+  \item Ken Gu, \textbf{Ruoxi Shang}, Tim Althoff, Chenglong Wang, Steven M.\ Drucker.
+  \textit{How Do Analysts Understand and Verify AI-Assisted Data Analyses?}
+  \textit{CHI 2024}.\hfill\tagRAI\tagAGENT
+  \vspace{8pt}
+
+  \item \textbf{Ruoxi Shang}, Kevin Feng, Chirag Shah.
+  \textit{Lay Users' Needs of Counterfactual Explanations}.
+  \textit{FAccT 2022}.\hfill\tagRAI
+  \vspace{8pt}
+
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,152 @@
+{
+  "name": "Ruoxi (Anna) Shang",
+  "title": "PhD Candidate",
+  "contact": {
+    "email": "rxshang@uw.edu",
+    "website": "https://ruoxishang.com",
+    "linkedin": "https://www.linkedin.com/in/ruoxi-shang-610359133/",
+    "scholar": "https://scholar.google.com/citations?user=",
+    "github": "https://github.com/ruoxishang",
+    "location": "Seattle, WA"
+  },
+  "education": [
+    {
+      "degree": "Ph.D. Candidate, Human-Centered Design and Engineering",
+      "institution": "University of Washington",
+      "location": "Seattle, WA",
+      "period": "Sep 2020 – Exp. Oct 2026",
+      "details": [
+        "Committee: Gary Hsieh, Chirag Shah, Tim Althoff, David McDonald"
+      ]
+    },
+    {
+      "degree": "B.A., Applied Mathematics and Statistics",
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, CA",
+      "period": "Graduated May 2020",
+      "details": [
+        "Concentration: Data Science"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Research Fellow",
+      "organization": "Oumi AI",
+      "location": "",
+      "period": "Oct 2025 – Present",
+      "collaborators": "Emmanouil Koukoumidis, Panos Achlioptas, Shang Hong Sim",
+      "details": [
+        "Building a benchmark for semantic risk reasoning that evaluates models' ability to discriminate risk type, assess severity, and justify rationales from text.",
+        "Operationalizing a comprehensive risk taxonomy and engineering a high-quality contrastive dataset to stress-test model safety and alignment."
+      ]
+    },
+    {
+      "title": "Research Lead & Mentor",
+      "organization": "University of Washington",
+      "location": "Seattle, WA",
+      "period": "Sep 2020 – Present",
+      "details": [
+        "Recruited and led a 12-person team to generate complex ground-truth datasets for agent benchmarking. Designed consensus protocols to resolve conflicting domain priorities (Data Science vs. ML) to ensure alignment and rigor. Co-authored paper accepted to EMNLP 2024.",
+        "Advised 50+ interdisciplinary teams through 0-to-1 development of user-centered systems in graduate level project-based classes."
+      ]
+    },
+    {
+      "title": "Research Intern",
+      "organization": "Microsoft Research",
+      "location": "",
+      "period": "Jun 2025 – Sep 2025",
+      "collaborators": "Denae Ford Robinson, Edward Cutrell",
+      "details": [
+        "Designed a novel structured user profiling framework that synthesizes interaction data with social science theory to create robust, interpretable user representations, enabling inference-time personalized steering.",
+        "Engineered a novel ecologically valid evaluation pipeline to generate ground-truth test cases for auditing agent alignment and validated system effectiveness via a robust auditing protocol using 90 days of real user communication data across 20 participants. Paper and Patent currently under review."
+      ]
+    },
+    {
+      "title": "Research Intern",
+      "organization": "Microsoft Research",
+      "location": "",
+      "period": "Jun 2023 – Sep 2023",
+      "collaborators": "Steven Drucker, Bongshin Lee, Dave Brown",
+      "details": [
+        "Led foundational research on using generative AI for end-to-end data analysis and decision making.",
+        "Designed and ran studies with industry experienced data analysts to evaluate how they understand, trust, and verify AI-generated analyses, identifying failure modes and verification strategies. Co-authored paper accepted to CHI 2024."
+      ]
+    },
+    {
+      "title": "Data Science and User Research Intern",
+      "organization": "TruEra",
+      "location": "",
+      "period": "Jul 2022 – Sep 2022",
+      "collaborators": "Mantas Lilis, Joshua Noble, Justin Lawyer",
+      "details": [
+        "Improved the ML model debugging experience for data scientists by leading research and designing product guided workflows for TruEra ML Model Diagnostics.",
+        "Identified the top pain points in real debugging practice and prioritized fixes, driving 0 to 1 product exploration and shaped the roadmap."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Mimetic Alignment with PRISMA: Auditing of AI-inferred Personal Profiles",
+      "authors": "Ruoxi Shang, Dan Marshall, Edward Cutrell, Denae Ford Robinson",
+      "venue": "arXiv (under review)",
+      "tags": ["Responsible AI", "Agents"]
+    },
+    {
+      "title": "PaperTok: Exploring the Use of Generative AI for Creating Short-form Videos for Research Communication",
+      "authors": "Meziah Ruby Cristobal*, Hyeonjeong Byeon*, Tze-Yu Chen*, Ruoxi Shang*, Donghoon Shin*, Ruican Zhong*, Tony Zhou*, Gary Hsieh",
+      "venue": "arXiv (under review)",
+      "tags": ["Agents"],
+      "note": "* equal contribution"
+    },
+    {
+      "title": "Synthetic Diversity: How Researchers Perceive and Engage with LLM-Generated Diverse Research Feedback",
+      "authors": "Ruoxi Shang, Ruican Zhong, Yuren Pang, David McDonald, Chirag Shah, Gary Hsieh",
+      "venue": "arXiv (under review)",
+      "tags": ["Responsible AI", "Measurement"]
+    },
+    {
+      "title": "Creative Stimuli for Multi-Agent LLM Brainstorming",
+      "authors": "Ruoxi Shang, Lei Cai, Courtney Cho, Chirag Shah, Gary Hsieh",
+      "venue": "arXiv (under review)",
+      "tags": ["Agents"]
+    },
+    {
+      "title": "Rethinking Teaching Evaluation Reports",
+      "authors": "Ruoxi Shang, Keri Mallari, Wei Bin Au Yeong, Ken Yasuhara, Anthony Tang, Gary Hsieh",
+      "venue": "CSCW 2025",
+      "tags": ["Responsible AI", "Measurement"]
+    },
+    {
+      "title": "Trusting your AI Agent Emotionally and Cognitively: Development and Validation of a Semantic Differential Scale for AI Trust",
+      "authors": "Ruoxi Shang, Gary Hsieh, Chirag Shah",
+      "venue": "AIES 2024",
+      "tags": ["Responsible AI", "Measurement"]
+    },
+    {
+      "title": "BLADE: Benchmarking Language Model Agents for Data-Driven Science",
+      "authors": "Ken Gu, Ruoxi Shang, Ruien Jiang, Keying Kuang, et al.",
+      "venue": "EMNLP 2024",
+      "tags": ["Measurement", "Agents"]
+    },
+    {
+      "title": "How Do Analysts Understand and Verify AI-Assisted Data Analyses?",
+      "authors": "Ken Gu, Ruoxi Shang, Tim Althoff, Chenglong Wang, Steven M. Drucker",
+      "venue": "CHI 2024",
+      "tags": ["Responsible AI", "Agents"]
+    },
+    {
+      "title": "Lay Users' Needs of Counterfactual Explanations",
+      "authors": "Ruoxi Shang, Kevin Feng, Chirag Shah",
+      "venue": "FAccT 2022",
+      "tags": ["Responsible AI"]
+    }
+  ],
+  "skills": {
+    "Programming": ["Python", "JavaScript/TypeScript", "React", "PyTorch", "scikit-learn", "SQL", "HTML/CSS"],
+    "LLMs": ["Prompt Engineering", "In-Context Learning", "RAG", "LLM APIs", "Multi-agent Frameworks", "LLM-as-a-Judge", "Evaluation & Benchmark Design"],
+    "HCI Methods": ["Experimental Design", "Hypothesis Testing", "Mixed-methods", "Survey Design", "Think-aloud Protocol", "Affinity Diagramming", "Cognitive Walkthrough", "Rapid Prototyping"]
+  },
+  "service": [],
+  "awards": []
+}
