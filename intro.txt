@@ -1,3 +1,5 @@
-Hi I'm Anna, a PhD candidate at the [University of Washington](https://www.hcde.washington.edu/).
+Hi, I'm Anna, a PhD candidate at the [University of Washington](https://www.hcde.washington.edu/). Previously, I studied Applied Mathematics and Statistics at [UC Berkeley](https://www.berkeley.edu/).
 
-My work focuses on evaluating and steering LLM behavior for trust, alignment, and reliability. I develop theory-grounded benchmarks and evaluation pipeline to measure model risks in realistic settings, and I design human-in-the-loop experiments to audit the downstream impact of AI agents. I have published 10+ peer-reviewed papers (CHI, EMNLP, FAccT, AIES) and contributed to foundational research at Microsoft Research and Oumi AI.
+My work evaluates and audits AI systems in settings where aggregate binary metrics are not enough. Throughout my PhD research, I have used benchmark design, synthetic scenario generation, rubric-based LLM judging, human-subjects studies, and hypothesis-driven analysis to assess AI systems. My work spans both automated evaluation pipelines and the design of processes that help human experts provide more reliable verification and feedback.
+
+I am generally interested in ways to make AI systems trustworthy, aligned with human values, and useful.
