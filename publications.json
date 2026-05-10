@@ -110,6 +110,7 @@
       "notes": null,
       "equal_contribution": null,
       "doi_or_url": null,
+      "thumbnail": "synthetic-arxiv-ongoing.png",
       "methods": ["Synthetic scenario generation", "Rubric-based LLM judging", "Human-subjects studies", "Hypothesis-driven analysis"],
       "featured": true
     },
